@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrier Check Call Automation</title>
+    <link link rel="stylesheet" href="css/carrier.css" >
+</head>
+<body>
+<main>    
+    <section class="table_header">
+        <ul>
+            <li><h1 class="titleHead">Carrier Check Call Automation</h1></li>
+            <li class="timerHead"><h1 class="time" id="time"></h1></li>
+        </ul>
+    </section>
+    <section class="table_body">
+        <table>
+            <thead>
+                <th>Load</th>
+                <th>Status</th>
+                <th>Carrier</th>
+                <th>Time</th>
+                <th>Miles</th>
+                <th>Pick Up Appt.</th>
+                <th>Actual Pick Up</th>
+                <th>Pick Up Departure</th>
+                <th>Delivery Appt.</th>
+                <th>Actual Delivery</th>
+                <th>Delivery Depature</th>
+                <th>Process</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="link">10000000</a></td>
+                    <td><p class = "status" id="status"></p></td>
+                    <td><input type="text" id="carrier" name="Name" class="dateStyle" value="Landstar"></td>
+                    <td><p class = "time"></p>6 Hours</td>
+                    <td><p class = "miles">500</p></td>
+                    <td><input type="datetime-local" class="dateStyle" name="pickAppt" id="pickAppt" value="1900-01-01T00:00"></td>
+                    <td><input type="datetime-local" class="dateStyle" name="actualPickUp" id="actualPickUp"></td>
+                    <td><input type="datetime-local" class="dateStyle" name="pickUpDeparture" id="pickUpDeparture"></td>
+                    <td><input type="datetime-local" class="dateStyle" name="deliverAppt" id="deliverAppt"></td>
+                    <td><input type="datetime-local" class="dateStyle" name="actualDelivery" id="actualDelivery"></td>
+                    <td><input type="datetime-local" class="dateStyle" name="deliveryDeparture" id="deliveryDeparture"></td>
+                    <td><button onclick="valShipment()">Submit</button></td>
+                </tr>
+                       
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="../javascript/carrier.js"></script>
+</body>
+
+</html>
