@@ -17,6 +17,9 @@ body{
     margin-left: 25px;
     margin-top: 15px;
 }
+.addRow{
+    background-image: url(../Images/plus.png);
+}
 .h1Container{
     color: white;
     padding-top: 3.8rem;
