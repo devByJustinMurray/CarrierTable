@@ -6,7 +6,8 @@
 }
 body{
     min-height: 100vh;
-    background-image: url(../Images/WATCO-Corner-Rendering.jpg.webp);
+
+    background-color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +30,7 @@ li{
     font-size: 1.6rem;
 }
 .addRow{
-  background: rgba(117, 117, 117, 0.267);  
+  background: grey;  
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -37,6 +38,7 @@ li{
   margin-left: 45px;
   margin-top: 10px;
   border-radius: 15px;
+  color: white;
   
 }
 .time{
@@ -58,7 +60,7 @@ li{
 }
 
 .table_body {
-    width: 95%;
+    width: 97%;
     max-height: calc(89% - .8rem);
     background-color: #fffb;
     font-weight: 600;
@@ -95,7 +97,8 @@ th {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #d5d1defe;
+    background-color: grey;
+    color: white;
 }
 
 tr:nth-child(even){
@@ -107,7 +110,7 @@ tr:hover{
 }
 
 .dateStyle{
-    background-color: #dfdce5fe;
+    background-color: white;
     border: none;
     padding: 7px;
     border-radius: 15px;
@@ -116,13 +119,15 @@ tr:hover{
 
 .dateStyle:focus{
     outline: none;
-    background-color:#d1cfd5fe;
+    background-color:grey;
+    opacity: .5;
 
 }
 
 .dateStyle:hover{
     cursor: pointer;
-    background-color: #d1cfd5fe;
+    background-color: grey;
+    opacity: .5;
 }
 
 .link{
@@ -137,10 +142,10 @@ tr:hover{
 
 .redLight{
 
-    background-image: url(../Images/stop-sign.png);
+background-color: red;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 20px;
+    border-radius: 25px;
     color: white;
 }
 .greenLight{

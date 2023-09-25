@@ -10,8 +10,8 @@ body{
     text-align: center;
 }
 .bgImage{
-    background-image: url("../Images/logo.jpg");
-    background-repeat: no-repeat; 
+        background-repeat: no-repeat; 
+    background-color: grey;
     height: 10rem;
     display: block;
     margin-left: 25px;

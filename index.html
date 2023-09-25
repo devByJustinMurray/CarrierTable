@@ -10,7 +10,7 @@
 <main>    
     <section class="table_header">
         <ul>
-            <li><button onclick="addRow()" class="addRow">Add New Shipment</button></li>
+        <!--     <li><button onclick="addRow()" class="addRow">Add New Shipment</button></li> -->
             <li class="timerHead"><h1 class="time" id="time"></h1></li>
         </ul>
     </section>
@@ -19,31 +19,31 @@
             <thead>
                 <th>Load</th>
                 <th>Status</th>
-                <th>Carrier</th>
-                <th>Time</th>
-                <th>Miles</th>
+                <th>Carrier (NC)</th>
+              <!--    <th>Time</th>-->
+               <!--   <th>Miles</th> -->
                 <th>Pick Up Appt.</th>
-                <th>Actual Pick Up</th>
-                <th>Pick Up Departure</th>
-                <th>Delivery Appt.</th>
-                <th>Actual Delivery</th>
-                <th>Delivery Depature</th>
-                <th>Process</th>
+                <th>Actual Pick Up (AP)</th>
+                <th>Pick Up Departure (PD)</th>
+                <th>Delivery Appt. (DA)</th>
+                <th>Actual Delivery (AD)</th>
+                <th>Delivery Depature (DD)</th>
+               <!--   <th>Process</th> -->
             </thead>
             <tbody>
                 <tr>
                     <td><a href="#" class="link">10000000</a></td>
                     <td><p class = "status" id="status"></p></td>
                     <td><input type="text" id="carrier" name="Name" class="dateStyle"></td>
-                    <td><p class = "time"></p id="hours"></td>
-                    <td><p class = "miles"></p></td>
+                <!--      <td><p class = "time"></p id="hours"></td> -->
+                <!--     <td><p class = "miles"></p></td>  -->
                     <td><input type="datetime-local" class="dateStyle" name="pickAppt" id="pickAppt"></td>
                     <td><input type="datetime-local" class="dateStyle" name="actualPickUp" id="actualPickUp"></td>
                     <td><input type="datetime-local" class="dateStyle" name="pickUpDeparture" id="pickUpDeparture"></td>
                     <td><input type="datetime-local" class="dateStyle" name="deliverAppt" id="deliverAppt"></td>
                     <td><input type="datetime-local" class="dateStyle" name="actualDelivery" id="actualDelivery"></td>
                     <td><input type="datetime-local" class="dateStyle" name="deliveryDeparture" id="deliveryDeparture"></td>
-                    <td><button onclick="valShipment()">Submit</button></td>
+                <!--    <td><button onclick="valShipment()">Submit</button></td>-->
                 </tr>
                        
             </tbody>

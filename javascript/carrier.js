@@ -32,39 +32,39 @@ function valShipment(){
        
     if ((carrier === "")&& (puAppt.getTime() - currentTime.getTime()) < 14400000){
         document.getElementById("status").innerText = "NC";
-        hours.textContent = ctpt.toLocaleString();
         loadStatus.classList.add("redLight");
-        alert("Need Carrier")
+     //   alert("Need Carrier")
     }
     else if (isNaN(aPickUp) && (ctpt > 300000)) {
         document.getElementById("status").innerText = "AP";
         loadStatus.classList.add("redLight");
-        alert("Need Actual Pickup Time")
+    //    alert("Need Actual Pickup Time")
     }
     else if (isNaN(puDepart) && (ctapt > 7200000)){
         document.getElementById("status").innerText = "PD";
         loadStatus.classList.add("redLight");
-        alert("Need Pick Up Departure Time")
+    //    alert("Need Pick Up Departure Time")
     }
     else if (isNaN(delAppt) && (ctdpt > 300000)){
         document.getElementById("status").innerText = "DA";
         loadStatus.classList.add("redLight");
-        alert("Need a Delivery Appointment Time")
+     //   alert("Need a Delivery Appointment Time")
     }
     else if (isNaN(aDelivery) && (ctda > 300000)){
-        document.getElementById("status").innerText = "DT";
+        document.getElementById("status").innerText = "AD";
         loadStatus.classList.add("redLight");
-        alert("Need a Actual Delivery Time")
+    //    alert("Need a Actual Delivery Time")
     }
     else if (isNaN(dDeparture) && (ctad > 7200000)){
         document.getElementById("status").innerText = "DD";
         loadStatus.classList.add("redLight");
-        alert("Need a Delivery Departure Time")
+    //    alert("Need a Delivery Departure Time")
     }
     else{
         document.getElementById("status").innerText = "GO";
         loadStatus.classList.add("greenLight");
-        alert("Everything is Good")
+     //   alert("Everything is Good")
     }
   
 }
+setInterval(valShipment, 15000);
